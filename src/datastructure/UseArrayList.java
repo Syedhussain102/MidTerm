@@ -13,13 +13,13 @@ public class UseArrayList {
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 * Store all the sorted data into one of the databases. */
 		ArrayList<String> student = new ArrayList<String>();
-		student.add("Siam");
-		student.add("Syed");
-		student.add("Sabuz");
-		student.add("Mahmood");
-		System.out.println("All values of array = "+student);
+		student.add("Ron");
+		student.add("Jhon");
+		student.add("Ray");
+		student.add("Mat");
+		System.out.println("All values : "+student);
 		for (int a = 1; a < 3; a++) {
-			System.out.println("specified from index to index = "+student.get(a));
+			System.out.println("index to index :"+student.get(a));
 		}
 		//connect to db
 		ConnectDB connect = new ConnectDB();
@@ -29,7 +29,7 @@ public class UseArrayList {
 		System.out.println(it.next());
 		System.out.println(it.hasNext());
 		while (it.hasNext())
-			System.out.println("from while loop = "+it.next());
+			System.out.println("from while loop : "+it.next());
 		for (Object x : student) {
 			System.out.println(x);
 

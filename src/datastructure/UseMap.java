@@ -18,26 +18,26 @@ public class UseMap {
 		 */
 
 
-		List<String> employees_of_mgt = new ArrayList();
-		employees_of_mgt.add("employee-1");
-		employees_of_mgt.add("employee-2");
-		employees_of_mgt.add("employee-3");
+		List<String> employeesManagement = new ArrayList();
+		employeesManagement.add("1st employee");
+		employeesManagement.add("2nd employee");
+		employeesManagement.add("3rd employee");
 
-		List<String> employees_of_act = new ArrayList();
-		employees_of_act.add("employees-4");
-		employees_of_act.add("employees-5");
-		employees_of_act.add("employees-6");
+		List<String> employeesAccountant = new ArrayList();
+		employeesAccountant.add("4th employee");
+		employeesAccountant.add("5th employee");
+		employeesAccountant.add("6th employee");
 
-		List<String> employees_of_sls = new ArrayList();
-		employees_of_sls.add("employee-7");
-		employees_of_sls.add("employee-8");
-		employees_of_sls.add("employee-9");
+		List<String> employeesSales = new ArrayList();
+		employeesSales.add("7th employee");
+		employeesSales.add("8th employee");
+		employeesSales.add("9th employee");
 
 
 		Map<String, List<String>> map = new HashMap<String,List<String>>();
-		map.put("Management", employees_of_mgt);
-		map.put("Accountant", employees_of_act);
-		map.put("Sales", employees_of_sls);
+		map.put("Management", employeesManagement);
+		map.put("Accountant", employeesAccountant);
+		map.put("Sales", employeesSales);
 
 		//for each loop
 		for(Map.Entry key: map.entrySet()){
@@ -54,9 +54,9 @@ public class UseMap {
 
 		ConnectDB connect = new ConnectDB();
 		//connect.insertDataFromMapToMySql((Map<String, List<String>>) map,"department","employees");
-		connect.insertNewDataFromMapToMySql((List<String>) employees_of_mgt,"table1","employee");
-		connect.insertNewDataFromMapToMySql((List<String>) employees_of_act,"table1","employee");
-		connect.insertNewDataFromMapToMySql((List<String>) employees_of_sls,"table1","employee");
+		connect.insertNewDataFromMapToMySql((List<String>) employeesManagement,"table1","employee");
+		connect.insertNewDataFromMapToMySql((List<String>) employeesAccountant,"table1","employee");
+		connect.insertNewDataFromMapToMySql((List<String>) employeesSales,"table1","employee");
 	}
 
 }
