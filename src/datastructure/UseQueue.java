@@ -13,10 +13,10 @@ public class UseQueue {
 		 *
 		 */
 		Queue<String> countries = new LinkedList<>();
-		countries.add("Bangladesh");
-		countries.add("Australia");
+		countries.add("Spain");
 		countries.add("USA");
 		countries.add("Canada");
+		countries.add("India");
 		System.out.println("peek : "+countries.peek());
 		System.out.println("remove : "+countries.remove());
 		System.out.println("poll : "+countries.poll());

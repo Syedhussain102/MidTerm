@@ -44,7 +44,7 @@ public class UseMap {
 			System.out.println(key.getKey()+" "+key.getValue());
 		}
 
-		System.out.println("****************************************");
+		System.out.println("********************");
 		//Iterator with for loop
 
 		Iterator it =map.entrySet().iterator();
